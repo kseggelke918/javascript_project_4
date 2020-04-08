@@ -2,7 +2,7 @@ class CreateHouses < ActiveRecord::Migration[6.0]
   def change
     create_table :houses do |t|
       t.string :name
-      t.string :moto
+      t.string :motto
 
       t.timestamps
     end
