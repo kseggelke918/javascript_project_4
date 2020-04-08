@@ -4,6 +4,7 @@ class CreateCharacters < ActiveRecord::Migration[6.0]
       t.string :name
       t.boolean :status
       t.string :location
+      t.integer :house_id
 
       t.timestamps
     end

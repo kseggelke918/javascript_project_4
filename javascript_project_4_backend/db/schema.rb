@@ -16,13 +16,14 @@ ActiveRecord::Schema.define(version: 2020_04_08_182012) do
     t.string "name"
     t.boolean "status"
     t.string "location"
+    t.integer "house_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "houses", force: :cascade do |t|
     t.string "name"
-    t.string "moto"
+    t.string "motto"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
