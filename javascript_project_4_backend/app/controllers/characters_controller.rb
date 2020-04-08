@@ -1,6 +1,9 @@
 class CharactersController < ApplicationController
     def index 
-        characters = Character.all 
-        render json: characters, include: [:name, :status, :location]
+        characters = Character.all
+        options = {
+            include: [:house]
+        } 
+        render json: CharacterSerializer.new(characters, options)
     end 
 end
