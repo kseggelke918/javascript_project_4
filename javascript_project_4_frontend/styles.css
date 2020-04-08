@@ -4,3 +4,11 @@ body {
 h1 {
     text-align: center;
 }
+
+div#house-card {
+    background-color: honeydew;
+    width: 300px;
+    border: 15px gray; 
+    padding: 50px;
+    margin: 20px;
+}
