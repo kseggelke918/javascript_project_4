@@ -6,13 +6,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
 })
 
 function makeCards(houses){
-    // DOM Manipulation on the house sent to method
-    // DOM Manipulation on each character sent to method
-    // want Attribute Name and Motto
-    const div = document.querySelector('#house-card')
+    console.log(houses)
+    const div = document.querySelector('.house-container')
+    const newDiv = document.createElement('div')
+    newDiv.setAttribute("class", "house-card")
     const h2 = document.createElement('h2')
     h2.innerHTML = `<h2>${houses.attributes.name}</h2>`
-    div.appendChild(h2)
+    div.appendChild(newDiv)
+    newDiv.appendChild(h2)
 }
 
 function getHouses(){
@@ -25,8 +26,6 @@ function getHouses(){
             json.data.forEach(function(houses){
                 makeCards(houses)
             })
-            // Iterate through json and call makeCards on each house
-            // call makeCards (that will do DOM manipulation)
         })
 }
 

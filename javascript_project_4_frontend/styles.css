@@ -5,9 +5,10 @@ h1 {
     text-align: center;
 }
 
-div#house-card {
+.house-card {
     background-color: gray;
     width: 150px;
     padding: 50px;
     margin: 20px;
 }
+
