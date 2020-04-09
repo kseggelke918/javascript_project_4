@@ -6,9 +6,8 @@ h1 {
 }
 
 div#house-card {
-    background-color: honeydew;
-    width: 300px;
-    border: 15px gray; 
+    background-color: gray;
+    width: 150px;
     padding: 50px;
     margin: 20px;
 }
