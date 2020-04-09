@@ -10,5 +10,6 @@ h1 {
     width: 150px;
     padding: 50px;
     margin: 20px;
+    display: inline-block;
 }
 
