@@ -30,7 +30,7 @@ function makeCards(houses){
         const characterDiv = document.createElement('div')
         characterDiv.setAttribute("class", "character-card")
         const p = document.createElement('p')
-        p.innerHTML = `<p>${character.name}</p>`
+        p.innerHTML = `<p>${character.name} ${character.location} ${character.status}</p>`
         newDiv.appendChild(characterDiv)
         characterDiv.appendChild(p)
     })
