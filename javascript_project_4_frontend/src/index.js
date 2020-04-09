@@ -25,19 +25,15 @@ function makeCards(houses){
     div.appendChild(newDiv)
     newDiv.appendChild(h3)
 
-    
-
-    const characters = houses.relationships.characters.data
+    const characters = houses.attributes.characters
     characters.forEach(character => {
         const characterDiv = document.createElement('div')
         characterDiv.setAttribute("class", "character-card")
         const p = document.createElement('p')
-        p.innerHTML = `<p>${character.id}</p>`
+        p.innerHTML = `<p>${character.name}</p>`
         newDiv.appendChild(characterDiv)
         characterDiv.appendChild(p)
     })
-
-    // p.innerHTML = `<p>${character.id}</p>`
     
 }
 
