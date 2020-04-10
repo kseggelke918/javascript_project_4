@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     fetchHouses();
-
 })
 
 function fetchHouses(){
@@ -28,12 +27,29 @@ function makeCards(houses){
     const characters = houses.attributes.characters
     characters.forEach(character => {
         const characterDiv = document.createElement('div')
-        characterDiv.setAttribute("class", "character-card")
         const p = document.createElement('p')
-        p.innerHTML = `<p>${character.name} ${character.location} ${character.status}</p>`
+        const label = document.createElement('label')
+        const input = document.createElement('input')
+        const span = document.createElement('span')
+
+        characterDiv.appendChild(label)
+        label.appendChild(input)
+        label.appendChild(span)
+
+        if (character.status === true){
+            character.status = "alive"
+        } else {
+            character.status = "deceased"
+        }
+
+        p.innerHTML = `<p>${character.name} - ${character.location} - ${character.status}</p>`
         newDiv.appendChild(characterDiv)
         characterDiv.appendChild(p)
-    })
-    
+
+        characterDiv.setAttribute("class", "character-card")
+        label.setAttribute("class", "switch")
+        input.setAttribute("type", "checkbox")
+        span.setAttribute("class", "slider round")
+    }) 
 }
 
