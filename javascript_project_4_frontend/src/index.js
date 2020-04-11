@@ -15,12 +15,13 @@ function fetchHouses(){
 }
 
 function makeCards(houses){
+    // debugger 
     // adding houses
     // all constants
     const div = document.querySelector('.house-container')
     const newDiv = document.createElement('div')
     const h3 = document.createElement('h3')
-    const characters = houses.attributes.characters
+    let characters = houses.attributes.characters
     
 
     // attributes 
@@ -39,12 +40,12 @@ function makeCards(houses){
         const label = document.createElement('label')
         const input = document.createElement('input')
         const span = document.createElement('span')
-        const toggleButton = document.querySelector('.slider round::before')
+        span.setAttribute("class", "slider round")
+        // const toggleButton = document.querySelector('.slider')
 
         label.setAttribute("class", "switch")
         input.setAttribute("type", "checkbox")
-        span.setAttribute("class", "slider round")
-
+         
         if (character.status === true){
             character.status = "alive"
         } else {
@@ -58,30 +59,33 @@ function makeCards(houses){
         label.appendChild(input)
         label.appendChild(span)
 
-        // toggleButton.addEventListener('click', (event) => {
-        //     updateStatus(event)
-        // })
+        span.addEventListener('click', (event) => {
+            console.log(`this is the event listener - ${character.name}`)
+            updateStatus(character)
+        })
 
     }) 
 }
 
 function updateStatus(event){   
-    event.preventDefault()
-    let newStatus = !character.status
+    console.log(event.status)
+    let newStatus = !event.status
+    console.log(`${newStatus} after`)
 
-    fetch(`http://localhost:3000/characters/${event.target.id}`, {
+    fetch(`http://localhost:3000/characters/${event.id}`, {
         method: "PATCH", 
+        mode: "cors",
         headers: {
             "Content-Type": "application/json",
-            "Accept": "application/json"
+            "Accept": "application/json", 
         },
         body: JSON.stringify({
             status: newStatus
         })
     })
     .then(response => response.json())
-    .then((character) => {
-        makeCards(character)
+    .then((houses) => {
+        makeCards(houses)
     })
 }
 
