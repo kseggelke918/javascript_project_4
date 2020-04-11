@@ -58,9 +58,9 @@ function makeCards(houses){
         label.appendChild(input)
         label.appendChild(span)
 
-        toggleButton.addEventListener('click', (event) => {
-            updateStatus(event)
-        })
+        // toggleButton.addEventListener('click', (event) => {
+        //     updateStatus(event)
+        // })
 
     }) 
 }
