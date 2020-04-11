@@ -8093,3 +8093,719 @@ Processing by HousesController#index as */*
 Completed 200 OK in 101ms (Views: 94.1ms | ActiveRecord: 6.6ms | Allocations: 37198)
 
 
+Started GET "/houses" for ::1 at 2020-04-11 14:22:20 -0600
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HousesController#index as */*
+  [1m[36mHouse Load (0.8ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+Completed 200 OK in 78ms (Views: 72.4ms | ActiveRecord: 5.6ms | Allocations: 37243)
+
+
+Started GET "/houses" for ::1 at 2020-04-11 14:22:21 -0600
+Processing by HousesController#index as */*
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (5.8ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+Completed 200 OK in 75ms (Views: 63.8ms | ActiveRecord: 10.4ms | Allocations: 37197)
+
+
+Started GET "/houses" for ::1 at 2020-04-11 14:22:39 -0600
+Processing by HousesController#index as */*
+  [1m[36mHouse Load (0.4ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+Completed 200 OK in 76ms (Views: 71.6ms | ActiveRecord: 4.3ms | Allocations: 37200)
+
+
+Started GET "/houses" for ::1 at 2020-04-11 14:23:09 -0600
+Processing by HousesController#index as */*
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+Completed 200 OK in 65ms (Views: 60.1ms | ActiveRecord: 4.5ms | Allocations: 37197)
+
+
+Started GET "/houses" for ::1 at 2020-04-11 14:23:19 -0600
+Processing by HousesController#index as */*
+  [1m[36mHouse Load (0.4ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+Completed 200 OK in 75ms (Views: 69.7ms | ActiveRecord: 4.4ms | Allocations: 37202)
+
+
+Started GET "/houses" for ::1 at 2020-04-11 14:24:44 -0600
+Processing by HousesController#index as */*
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+Completed 200 OK in 129ms (Views: 122.4ms | ActiveRecord: 5.8ms | Allocations: 37197)
+
+
+Started GET "/houses" for ::1 at 2020-04-11 14:25:07 -0600
+Processing by HousesController#index as */*
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (1.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+Completed 200 OK in 146ms (Views: 137.9ms | ActiveRecord: 7.8ms | Allocations: 37201)
+
+
+Started GET "/houses" for ::1 at 2020-04-11 14:25:22 -0600
+Processing by HousesController#index as */*
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (3.7ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (1.6ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.6ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+Completed 200 OK in 140ms (Views: 128.9ms | ActiveRecord: 11.0ms | Allocations: 37200)
+
+
+Started GET "/houses" for ::1 at 2020-04-11 14:51:21 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HousesController#index as */*
+  [1m[36mHouse Load (0.7ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+Completed 200 OK in 109ms (Views: 97.2ms | ActiveRecord: 6.1ms | Allocations: 45973)
+
+
+Started GET "/houses" for ::1 at 2020-04-11 14:53:42 -0600
+Processing by HousesController#index as */*
+  [1m[36mHouse Load (0.4ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (2.7ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+Completed 200 OK in 96ms (Views: 86.6ms | ActiveRecord: 8.3ms | Allocations: 37197)
+
+
+Started GET "/houses" for ::1 at 2020-04-11 14:54:11 -0600
+Processing by HousesController#index as */*
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+Completed 200 OK in 99ms (Views: 92.6ms | ActiveRecord: 6.0ms | Allocations: 37201)
+
+
+Started GET "/houses" for ::1 at 2020-04-11 14:55:24 -0600
+Processing by HousesController#index as */*
+  [1m[36mHouse Load (1.7ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+Completed 200 OK in 94ms (Views: 87.0ms | ActiveRecord: 7.0ms | Allocations: 37200)
+
+
+Started GET "/houses" for ::1 at 2020-04-11 14:55:42 -0600
+Processing by HousesController#index as */*
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+Completed 200 OK in 99ms (Views: 92.7ms | ActiveRecord: 5.8ms | Allocations: 37197)
+
+
+Started GET "/houses" for ::1 at 2020-04-11 14:55:54 -0600
+Processing by HousesController#index as */*
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+Completed 200 OK in 100ms (Views: 93.2ms | ActiveRecord: 6.2ms | Allocations: 37200)
+
+

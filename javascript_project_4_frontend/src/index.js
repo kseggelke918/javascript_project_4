@@ -2,10 +2,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     fetchHouses();
 })
 
-document.addEventListener('click', (event)=> {
-    const toggleButton = document.getElementsByClassName('slider round')
-})
-
 function fetchHouses(){
     fetch("http://localhost:3000/houses")
         .then (function(response){
@@ -25,6 +21,7 @@ function makeCards(houses){
     const newDiv = document.createElement('div')
     const h3 = document.createElement('h3')
     const characters = houses.attributes.characters
+    
 
     // attributes 
     newDiv.setAttribute("class", "house-card")
@@ -42,6 +39,7 @@ function makeCards(houses){
         const label = document.createElement('label')
         const input = document.createElement('input')
         const span = document.createElement('span')
+        const toggleButton = document.querySelector('.slider round::before')
 
         label.setAttribute("class", "switch")
         input.setAttribute("type", "checkbox")
@@ -60,6 +58,30 @@ function makeCards(houses){
         label.appendChild(input)
         label.appendChild(span)
 
+        toggleButton.addEventListener('click', (event) => {
+            updateStatus(event)
+        })
+
     }) 
+}
+
+function updateStatus(event){   
+    event.preventDefault()
+    let newStatus = !character.status
+
+    fetch(`http://localhost:3000/characters/${event.target.id}`, {
+        method: "PATCH", 
+        headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+        },
+        body: JSON.stringify({
+            status: newStatus
+        })
+    })
+    .then(response => response.json())
+    .then((character) => {
+        makeCards(character)
+    })
 }
 
