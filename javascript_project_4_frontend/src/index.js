@@ -2,6 +2,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
     fetchHouses();
 })
 
+document.addEventListener('click', (event)=> {
+    const toggleButton = document.getElementsByClassName('slider round')
+})
+
 function fetchHouses(){
     fetch("http://localhost:3000/houses")
         .then (function(response){
@@ -15,26 +19,33 @@ function fetchHouses(){
 }
 
 function makeCards(houses){
+    // adding houses
+    // all constants
     const div = document.querySelector('.house-container')
     const newDiv = document.createElement('div')
-    newDiv.setAttribute("class", "house-card")
     const h3 = document.createElement('h3')
-    h3.innerHTML = `<h3>${houses.attributes.name}</h3>`
+    const characters = houses.attributes.characters
+
+    // attributes 
+    newDiv.setAttribute("class", "house-card")
+
+    // appends
     div.appendChild(newDiv)
     newDiv.appendChild(h3)
-
-    const characters = houses.attributes.characters
+    
+    h3.innerHTML = `<h3>${houses.attributes.name}</h3>`
+    
+    // adding characters
     characters.forEach(character => {
         const characterDiv = document.createElement('div')
         const p = document.createElement('p')
-        // const label = document.createElement('label')
-        // const input = document.createElement('input')
-        // const span = document.createElement('span')
-        const toggleDiv = document.createElement('div')
-        const toggleInput = document.createElement('input')
-        const toggleLabel = document.createElement('label') 
-        const toggleSpanInner = document.createElement('span')
-        const toggleSpanSwitch = document.createElement('span')
+        const label = document.createElement('label')
+        const input = document.createElement('input')
+        const span = document.createElement('span')
+
+        label.setAttribute("class", "switch")
+        input.setAttribute("type", "checkbox")
+        span.setAttribute("class", "slider round")
 
         if (character.status === true){
             character.status = "alive"
@@ -45,28 +56,10 @@ function makeCards(houses){
         p.innerHTML = `<p>${character.name} - ${character.location} - ${character.status}</p>`
         newDiv.appendChild(characterDiv)
         characterDiv.appendChild(p)
+        characterDiv.appendChild(label)
+        label.appendChild(input)
+        label.appendChild(span)
 
-        characterDiv.setAttribute("class", "character-card")
-        toggleDiv.setAttribute("class", "dead-alive")
-        toggleInput.setAttribute("type", "checkbox")
-        toggleLabel.setAttribute("class", "dead-alive-label")
-        toggleSpanInner.setAttribute("class", "dead-alive-switch-inner")
-        toggleSpanSwitch.setAttribute("class", "dead-alive-switch-switch")
-
-        characterDiv.appendChild(toggleDiv)
-        toggleDiv.appendChild(toggleInput)
-        toggleDiv.appendChild(toggleLabel)
-        toggleDiv.appendChild(toggleSpanInner)
-        toggleDiv.appendChild(toggleSpanSwitch)
-        
-   
-        // label.setAttribute("class", "switch")
-        // input.setAttribute("type", "checkbox")
-        // span.setAttribute("class", "slider round")
-
-        // characterDiv.appendChild(label)
-        // label.appendChild(input)
-        // label.appendChild(span)
     }) 
 }
 
