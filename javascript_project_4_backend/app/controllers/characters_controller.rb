@@ -10,6 +10,11 @@ class CharactersController < ApplicationController
     def update 
         character = Character.find_by(id: params[:id])
         character.update(character_params)
+        characters = Character.all 
+        options = {
+            include: [:house]
+        } 
+        render json: CharacterSerializer.new(characters, options)
     end 
 
     private 
