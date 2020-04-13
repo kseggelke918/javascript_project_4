@@ -41,7 +41,6 @@ function makeCards(houses){
         const input = document.createElement('input')
         const span = document.createElement('span')
         span.setAttribute("class", "slider round")
-        // const toggleButton = document.querySelector('.slider')
 
         label.setAttribute("class", "switch")
         input.setAttribute("type", "checkbox")
@@ -67,12 +66,22 @@ function makeCards(houses){
     }) 
 }
 
-function updateStatus(event){   
-    console.log(event.status)
-    let newStatus = !event.status
-    console.log(`${newStatus} after`)
+function updateStatus(character){  
+    console.log(character.status)
+    if (character.status === "deceased"){
+        let newStatus = true 
+        fetchPatchStatus(newStatus, character);
+        console.log(`${newStatus} after`)
+    } else {
+        let newStatus = false 
+        fetchPatchStatus(newStatus);
+        console.log(`${newStatus} after`)
+    }
+    
+}
 
-    fetch(`http://localhost:3000/characters/${event.id}`, {
+function fetchPatchStatus(newStatus, character){
+    fetch(`http://localhost:3000/characters/${character.id}`, {
         method: "PATCH", 
         mode: "cors",
         headers: {
@@ -85,7 +94,24 @@ function updateStatus(event){
     })
     .then(response => response.json())
     .then((houses) => {
+
+        // let newCharacter = new Character(character)
+        // renderCharacter(newCharacter)
         makeCards(houses)
     })
 }
 
+//toggle status function which renders the response of your fetch patch
+//feed the response of the fetch into a class constructor for a character (i.e. new Character(jsonsfetchpatchresponsedata)
+//and then (re-)render that info to the DOM
+
+
+
+class Character {
+    constructor(character){
+        this.name = character.name
+        this.location = character.location
+        this.status = character.status
+    }
+
+}

@@ -14,7 +14,13 @@ class CharactersController < ApplicationController
         options = {
             include: [:house]
         } 
-        render json: CharacterSerializer.new(characters, options)
+        binding.pry 
+        render json: CharacterSerializer.new(character, options)
+    end 
+
+    def show 
+        character = Character.find_by(id: params[:id])
+        render json: CharacterSerializer.new(character)
     end 
 
     private 

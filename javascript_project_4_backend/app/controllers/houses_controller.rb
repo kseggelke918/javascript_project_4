@@ -11,4 +11,11 @@ class HousesController < ApplicationController
         house = House.find_by(id: params[:id])
         house.name == "#{house.name} - no living heirs"
     end 
+
+    def destroy 
+        house = House.find_by(id: params[:id])
+        house.destroy 
+
+        # Need to render something?
+    end 
 end
