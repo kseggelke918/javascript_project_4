@@ -95,8 +95,12 @@ function fetchPatchStatus(newStatus, character){
 
 function updateStatusWord(character){
     let statusSpan = document.getElementById(`${character.data.id}`)
-    character.data.attributes.status === true ? statusSpan.innerText = "alive" : statusSpan.innerText = "deceased"
+    // character.data.attributes.status === true ? statusSpan.innerText = "alive" : statusSpan.innerText = "deceased"
+    statusSpan.innerHTML(`${character.data.status}`)
 }
+
+
+
 
 class Character {
     constructor(character){
