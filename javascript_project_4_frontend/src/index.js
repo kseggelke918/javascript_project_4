@@ -15,25 +15,18 @@ function fetchHouses(){
 }
 
 function makeCards(houses){
-    // debugger 
-    // adding houses
-    // all constants
     const div = document.querySelector('.house-container')
     const newDiv = document.createElement('div')
     const h3 = document.createElement('h3')
     let characters = houses.attributes.characters
     
-
-    // attributes 
     newDiv.setAttribute("class", "house-card")
 
-    // appends
     div.appendChild(newDiv)
     newDiv.appendChild(h3)
     
     h3.innerHTML = `<h3>${houses.attributes.name}</h3>`
-    
-    // adding characters
+
     characters.forEach(character => {
         const characterDiv = document.createElement('div')
         const p = document.createElement('p')
@@ -51,7 +44,7 @@ function makeCards(houses){
             character.status = "deceased"
         }
 
-        p.innerHTML = `<p>${character.name} - ${character.location} - ${character.status}</p>`
+        p.innerHTML = `<p>${character.name} - ${character.location} - <span id=${character.id}>${character.status}</span></p>`
         newDiv.appendChild(characterDiv)
         characterDiv.appendChild(p)
         characterDiv.appendChild(label)
@@ -74,13 +67,14 @@ function updateStatus(character){
         console.log(`${newStatus} after`)
     } else {
         let newStatus = false 
-        fetchPatchStatus(newStatus);
+        fetchPatchStatus(newStatus, character);
         console.log(`${newStatus} after`)
     }
     
 }
 
 function fetchPatchStatus(newStatus, character){
+    console.log(character)
     fetch(`http://localhost:3000/characters/${character.id}`, {
         method: "PATCH", 
         mode: "cors",
@@ -94,19 +88,15 @@ function fetchPatchStatus(newStatus, character){
     })
     .then(response => response.json())
     .then((characterResponse) => {
-
-        // let newCharacter = new Character(character)
-        // renderCharacter(newCharacter)
         console.log(characterResponse)
-        new Character(characterResponse)
+        updateStatusWord(characterResponse)
     })
 }
 
-//toggle status function which renders the response of your fetch patch
-//feed the response of the fetch into a class constructor for a character (i.e. new Character(jsonsfetchpatchresponsedata)
-//and then (re-)render that info to the DOM
-
-
+function updateStatusWord(character){
+    let statusSpan = document.getElementById(`${character.data.id}`)
+    character.data.attributes.status === true ? statusSpan.innerText = "alive" : statusSpan.innerText = "deceased"
+}
 
 class Character {
     constructor(character){
@@ -114,7 +104,4 @@ class Character {
         this.location = character.location
         this.status = character.status
     }
-
-
-
 }
