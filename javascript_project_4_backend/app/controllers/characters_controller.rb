@@ -10,12 +10,10 @@ class CharactersController < ApplicationController
     def update 
         character = Character.find_by(id: params[:id])
         character.update(character_params)
-        characters = Character.all 
         options = {
             include: [:house]
-        } 
-        binding.pry 
-        render json: CharacterSerializer.new(character, options)
+        }  
+        render json: CharacterSerializer.new(character)
     end 
 
     def show 
