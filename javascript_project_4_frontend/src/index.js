@@ -93,11 +93,12 @@ function fetchPatchStatus(newStatus, character){
         })
     })
     .then(response => response.json())
-    .then((houses) => {
+    .then((characterResponse) => {
 
         // let newCharacter = new Character(character)
         // renderCharacter(newCharacter)
-        makeCards(houses)
+        console.log(characterResponse)
+        new Character(characterResponse)
     })
 }
 
@@ -113,5 +114,7 @@ class Character {
         this.location = character.location
         this.status = character.status
     }
+
+
 
 }
