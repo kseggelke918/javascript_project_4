@@ -1,8 +1,4 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-    fetchHouses();
-})
-
-function fetchHouses(){
     fetch("http://localhost:3000/houses")
         .then (function(response){
             return response.json();
@@ -12,18 +8,25 @@ function fetchHouses(){
                 makeCards(houses)
             })
         })
-}
+
 
 function makeCards(houses){
+    console.log(houses)
     const div = document.querySelector('.house-container')
     const newDiv = document.createElement('div')
     const h3 = document.createElement('h3')
+    const deleteButton = document.createElement('button')
     let characters = houses.attributes.characters
     
     newDiv.setAttribute("class", "house-card")
+    deleteButton.setAttribute("class", "delete")
+    deleteButton.setAttribute("id", `delete-${houses.id}`)
+    deleteButton.setAttribute("value", "delete")
+    deleteButton.innerText = "delete"
 
     div.appendChild(newDiv)
     newDiv.appendChild(h3)
+    newDiv.appendChild(deleteButton)
     
     h3.innerHTML = `<h3>${houses.attributes.name}</h3>`
 
@@ -34,6 +37,7 @@ function makeCards(houses){
         const input = document.createElement('input')
         const span = document.createElement('span')
         span.setAttribute("class", "slider round")
+        span.setAttribute('id', `toggle-${character.id}`)
 
         label.setAttribute("class", "switch")
         input.setAttribute("type", "checkbox")
@@ -51,24 +55,24 @@ function makeCards(houses){
         label.appendChild(input)
         label.appendChild(span)
 
-        span.addEventListener('click', (event) => {
-            console.log(`this is the event listener - ${character.name}`)
-            updateStatus(character)
-        })
+        listenForToggle(character)
 
     }) 
 }
 
+function listenForToggle(character){
+    let span = document.getElementById(`toggle-${character.id}`)
+    let newStatus = updateStatus(character)
+    span.addEventListener('click', (event) => {
+        fetchPatchStatus(newStatus, character)
+    })
+}
+
 function updateStatus(character){  
-    console.log(character.status)
     if (character.status === "deceased"){
-        let newStatus = true 
-        fetchPatchStatus(newStatus, character);
-        console.log(`${newStatus} after`)
+        return true 
     } else {
-        let newStatus = false 
-        fetchPatchStatus(newStatus, character);
-        console.log(`${newStatus} after`)
+        return false
     }
     
 }
@@ -95,8 +99,11 @@ function fetchPatchStatus(newStatus, character){
 
 function updateStatusWord(character){
     let statusSpan = document.getElementById(`${character.data.id}`)
-    // character.data.attributes.status === true ? statusSpan.innerText = "alive" : statusSpan.innerText = "deceased"
-    statusSpan.innerHTML(`${character.data.status}`)
+    if (character.data.attributes.status === true ){
+        statusSpan.innerText = "alive"
+    } else {
+        statusSpan.innerText = "deceased"
+    }
 }
 
 
@@ -109,3 +116,6 @@ class Character {
         this.status = character.status
     }
 }
+
+
+})

@@ -13,6 +13,7 @@ class CharactersController < ApplicationController
         options = {
             include: [:house]
         }  
+        # binding.pry 
         render json: CharacterSerializer.new(character)
     end 
 
