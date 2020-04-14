@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 function makeCards(houses){
-    console.log(houses)
     const div = document.querySelector('.house-container')
     const newDiv = document.createElement('div')
     const h3 = document.createElement('h3')
@@ -19,14 +18,9 @@ function makeCards(houses){
     let characters = houses.attributes.characters
     
     newDiv.setAttribute("class", "house-card")
-    deleteButton.setAttribute("class", "delete")
-    deleteButton.setAttribute("id", `delete-${houses.id}`)
-    deleteButton.setAttribute("value", "delete")
-    deleteButton.innerText = "delete"
 
     div.appendChild(newDiv)
     newDiv.appendChild(h3)
-    newDiv.appendChild(deleteButton)
     
     h3.innerHTML = `<h3>${houses.attributes.name}</h3>`
 
@@ -36,6 +30,7 @@ function makeCards(houses){
         const label = document.createElement('label')
         const input = document.createElement('input')
         const span = document.createElement('span')
+        const deleteButton = document.createElement('button')
         span.setAttribute("class", "slider round")
         span.setAttribute('id', `toggle-${character.id}`)
 
@@ -55,7 +50,14 @@ function makeCards(houses){
         label.appendChild(input)
         label.appendChild(span)
 
+        deleteButton.setAttribute("class", "delete")
+        deleteButton.setAttribute("id", `delete-${character.id}`)
+        deleteButton.setAttribute("value", "delete")
+        deleteButton.innerText = "delete"
+        characterDiv.appendChild(deleteButton)
+
         listenForToggle(character)
+        deleteEventListener(character)
 
     }) 
 }
@@ -73,12 +75,10 @@ function updateStatus(character){
         return true 
     } else {
         return false
-    }
-    
+    } 
 }
 
 function fetchPatchStatus(newStatus, character){
-    console.log(character)
     fetch(`http://localhost:3000/characters/${character.id}`, {
         method: "PATCH", 
         mode: "cors",
@@ -92,7 +92,6 @@ function fetchPatchStatus(newStatus, character){
     })
     .then(response => response.json())
     .then((characterResponse) => {
-        console.log(characterResponse)
         updateStatusWord(characterResponse)
     })
 }
@@ -106,8 +105,24 @@ function updateStatusWord(character){
     }
 }
 
+function deleteEventListener(character){
+    console.log(character)
+    deleteCharacter = document.getElementById(`delete-${character.id}`)
+    deleteCharacter.addEventListener('click', (event) => {
+        deleteFetch(character.id)
+    })
+}
 
-
+function deleteFetch(id){
+    console.log(id)
+    fetch(`http://localhost:3000/characters/${id}`, {
+        method: "DELETE", 
+        mode: "cors"
+    }).then (response => response.json())
+    .then((deleteResponse) => {
+        console.log(deleteResponse) 
+    })
+}
 
 class Character {
     constructor(character){
