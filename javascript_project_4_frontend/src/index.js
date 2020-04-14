@@ -106,7 +106,6 @@ function updateStatusWord(character){
 }
 
 function deleteEventListener(character){
-    console.log(character)
     deleteCharacter = document.getElementById(`delete-${character.id}`)
     deleteCharacter.addEventListener('click', (event) => {
         deleteFetch(character.id)
@@ -114,7 +113,6 @@ function deleteEventListener(character){
 }
 
 function deleteFetch(id){
-    console.log(id)
     fetch(`http://localhost:3000/characters/${id}`, {
         method: "DELETE", 
         mode: "cors"
