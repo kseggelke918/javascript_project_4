@@ -14,6 +14,7 @@ function makeCards(houses){
     const div = document.querySelector('.house-container')
     const newDiv = document.createElement('div')
     const h3 = document.createElement('h3')
+    const h4 = document.createElement('h4')
     const deleteButton = document.createElement('button')
     let characters = houses.attributes.characters
     
@@ -21,8 +22,10 @@ function makeCards(houses){
 
     div.appendChild(newDiv)
     newDiv.appendChild(h3)
+    newDiv.appendChild(h4)
     
     h3.innerHTML = `<h3>${houses.attributes.name}</h3>`
+    h4.innerHTML = `<h4>${houses.attributes.motto}</h4>`
 
     characters.forEach(character => {
         const characterDiv = document.createElement('div')
@@ -97,14 +100,14 @@ function fetchPatchStatus(newStatus, character){
     })
 }
 
-function updateStatusWord(character){
-    let statusSpan = document.getElementById(`${character.data.id}`)
-    if (character.data.attributes.status === true ){
-        statusSpan.innerText = "alive"
-    } else {
-        statusSpan.innerText = "deceased"
-    }
-}
+// function updateStatusWord(character){
+//     let statusSpan = document.getElementById(`${character.data.id}`)
+//     if (character.data.attributes.status === true ){
+//         statusSpan.innerText = "alive"
+//     } else {
+//         statusSpan.innerText = "deceased"
+//     }
+// }
 
 function deleteEventListener(character){
     deleteCharacter = document.getElementById(`delete-${character.id}`)
@@ -123,14 +126,4 @@ function deleteFetch(id){
         console.log(deleteResponse) 
     })
 }
-
-class Character {
-    constructor(character){
-        this.name = character.name
-        this.location = character.location
-        this.status = character.status
-    }
-}
-
-
 })

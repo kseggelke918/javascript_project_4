@@ -8,13 +8,13 @@ class CharactersController < ApplicationController
     end 
 
     def update 
-        binding.pry 
+        # binding.pry 
         character = Character.find_by(id: params[:id])
         character.update(character_params)
         options = {
             include: [:house]
         }   
-        binding.pry 
+        # binding.pry 
         render json: CharacterSerializer.new(character)
     end 
 
