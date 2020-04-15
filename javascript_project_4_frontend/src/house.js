@@ -1,3 +1,7 @@
 class House {
-    constructor(name, motto)
+    constructor(house){
+        this.name = house.name 
+        this.motto = house.motto
+        this.characters = house.characters
+    }
 }

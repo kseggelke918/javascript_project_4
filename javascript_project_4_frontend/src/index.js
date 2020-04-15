@@ -100,14 +100,14 @@ function fetchPatchStatus(newStatus, character){
     })
 }
 
-// function updateStatusWord(character){
-//     let statusSpan = document.getElementById(`${character.data.id}`)
-//     if (character.data.attributes.status === true ){
-//         statusSpan.innerText = "alive"
-//     } else {
-//         statusSpan.innerText = "deceased"
-//     }
-// }
+function updateStatusWord(character){
+    let statusSpan = document.getElementById(`${character.data.id}`)
+    if (character.data.attributes.status === true ){
+        statusSpan.innerText = "alive"
+    } else {
+        statusSpan.innerText = "deceased"
+    }
+}
 
 function deleteEventListener(character){
     deleteCharacter = document.getElementById(`delete-${character.id}`)
