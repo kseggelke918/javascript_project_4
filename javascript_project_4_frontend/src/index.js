@@ -31,6 +31,7 @@ function makeCards(houses){
         const input = document.createElement('input')
         const span = document.createElement('span')
         const deleteButton = document.createElement('button')
+        characterDiv.setAttribute('id', `character-div-${character.id}`)
         span.setAttribute("class", "slider round")
         span.setAttribute('id', `toggle-${character.id}`)
 
@@ -119,7 +120,14 @@ function deleteFetch(id){
     }).then (response => response.json())
     .then((deleteResponse) => {
         console.log(deleteResponse) 
+        removeDeletedCharacter(deleteResponse)
     })
+}
+
+function removeDeletedCharacter(deletedCharacter){
+    console.log(deletedCharacter)
+    deleteChar = document.getElementById(`character-div-${character.id}`)
+    deleteChar.remove();
 }
 
 class Character {
