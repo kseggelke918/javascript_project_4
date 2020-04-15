@@ -110,6 +110,7 @@ function deleteEventListener(character){
     deleteCharacter = document.getElementById(`delete-${character.id}`)
     deleteCharacter.addEventListener('click', (event) => {
         deleteFetch(character.id)
+        event.target.parentElement.remove();
     })
 }
 
@@ -120,14 +121,7 @@ function deleteFetch(id){
     }).then (response => response.json())
     .then((deleteResponse) => {
         console.log(deleteResponse) 
-        removeDeletedCharacter(deleteResponse)
     })
-}
-
-function removeDeletedCharacter(deletedCharacter){
-    console.log(deletedCharacter)
-    deleteChar = document.getElementById(`character-div-${character.id}`)
-    deleteChar.remove();
 }
 
 class Character {

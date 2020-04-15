@@ -25,7 +25,6 @@ class CharactersController < ApplicationController
         character = Character.find_by(id: params[:id])
         character.destroy 
         render json: { message: 'character deleted'}
-        redirect_to characters_url
     end 
 
     private 
