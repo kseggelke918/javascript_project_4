@@ -15,7 +15,7 @@ class Character {
     }
 
     deleteFetch(){
-        fetch(`http://localhost:3000/characters/${character.id}`, {
+        fetch(`http://localhost:3000/characters/${this.id}`, {
             method: "DELETE", 
             mode: "cors"
         }).then (response => response.json())
