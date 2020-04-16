@@ -6,9 +6,9 @@ class Character {
         this.id = character.id
     }
 
-    updateStatusWord(character){
-        let statusSpan = document.getElementById(`${character.data.id}`)
-        if (character.data.attributes.status === true ){
+    updateStatusWord(){
+        let statusSpan = document.getElementById(`${this.data.id}`)
+        if (this.data.attributes.status === true ){
             statusSpan.innerText = "alive"
         } else {
             statusSpan.innerText = "deceased"
@@ -27,25 +27,45 @@ class Character {
         let span = document.getElementById(`toggle-${this.id}`)
         let newStatus = this.updateStatus
         span.addEventListener('click', (event) => {
-            fetchPatchStatus(newStatus, this)
+            this.fetchPatchStatus(newStatus)
         })
     }
 
     deleteEventListener(){
         let deleteCharacter = document.getElementById(`delete-${this.id}`)
         deleteCharacter.addEventListener('click', (event) => {
-            this.deleteFetch
+            this.deleteFetch();
             event.target.parentElement.remove();
         })
     }
 
     deleteFetch(){
-        fetch(`http://localhost:3000/characters/${id}`, {
+        console.log(this)
+        fetch(`http://localhost:3000/characters/${this.id}`, {
             method: "DELETE", 
             mode: "cors"
         }).then (response => response.json())
         .then((deleteResponse) => {
             console.log(deleteResponse) 
+        })
+    }
+
+    fetchPatchStatus(newStatus){
+        console.log(this)
+        fetch(`http://localhost:3000/characters/${this.id}`, {
+            method: "PATCH", 
+            mode: "cors",
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json", 
+            },
+            body: JSON.stringify({
+                status: newStatus
+            })
+        })
+        .then(response => response.json())
+        .then((characterResponse) => {
+            this.updateStatusWord()
         })
     }
 
