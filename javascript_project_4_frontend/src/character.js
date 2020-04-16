@@ -7,6 +7,7 @@ class Character {
     }
 
     updateStatusWord(){
+        console.log(this)
         let statusSpan = document.getElementById(`${this.data.id}`)
         if (this.data.attributes.status === true ){
             statusSpan.innerText = "alive"
@@ -41,7 +42,7 @@ class Character {
 
     deleteFetch(){
         console.log(this)
-        fetch(`http://localhost:3000/characters/${this.id}`, {
+        fetch(`http://localhost:3000/characters/${character.id}`, {
             method: "DELETE", 
             mode: "cors"
         }).then (response => response.json())
