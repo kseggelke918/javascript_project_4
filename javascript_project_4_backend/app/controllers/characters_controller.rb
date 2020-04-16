@@ -10,7 +10,7 @@ class CharactersController < ApplicationController
     def update 
         # binding.pry 
         character = Character.find_by(id: params[:id])
-        character.update(:status)
+        character.update({status: !status})
         options = {
             include: [:house]
         }   
@@ -24,7 +24,6 @@ class CharactersController < ApplicationController
     end 
 
     def destroy
-        # binding.pry 
         character = Character.find_by(id: params[:id])
         character.destroy 
         render json: { message: 'character deleted'}
