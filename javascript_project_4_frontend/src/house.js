@@ -29,10 +29,10 @@ class House {
             const input = document.createElement('input')
             const span = document.createElement('span')
             const deleteButton = document.createElement('button')
+
             characterDiv.setAttribute('id', `character-div-${character.id}`)
             span.setAttribute("class", "slider round")
             span.setAttribute('id', `toggle-${character.id}`)
-
             label.setAttribute("class", "switch")
             input.setAttribute("type", "checkbox")
          

@@ -46,19 +46,11 @@ class Character {
 
     updateStatusWord(){
         let statusSpan = document.getElementById(`${this.id}`)
-        if (this.status === true ){
-            statusSpan.innerText = "alive"
-        } else {
-            statusSpan.innerText = "deceased"
-        }
+        this.status === true ? statusSpan.innerText = "alive" : statusSpan.innerText = "deceased"
     }
 
     updateStatus(){  
-        if (this.status === "deceased"){
-            return true 
-        } else {
-            return false
-        } 
+        this.status === "deceased" ? true : false 
     }
 
     listenForToggle(){
