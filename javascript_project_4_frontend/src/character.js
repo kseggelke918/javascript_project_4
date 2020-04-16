@@ -15,7 +15,6 @@ class Character {
     }
 
     deleteFetch(){
-        console.log(this)
         fetch(`http://localhost:3000/characters/${character.id}`, {
             method: "DELETE", 
             mode: "cors"

@@ -35030,3 +35030,1198 @@ Processing by HousesController#index as */*
 Completed 200 OK in 104ms (Views: 80.3ms | ActiveRecord: 19.2ms | Allocations: 46603)
 
 
+Started GET "/houses" for ::1 at 2020-04-15 22:10:52 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HousesController#index as */*
+  [1m[36mHouse Load (0.6ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (1.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+Completed 200 OK in 160ms (Views: 152.5ms | ActiveRecord: 7.3ms | Allocations: 37243)
+
+
+Started GET "/houses" for ::1 at 2020-04-15 22:12:39 -0600
+Processing by HousesController#index as */*
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+Completed 200 OK in 87ms (Views: 80.7ms | ActiveRecord: 6.0ms | Allocations: 37197)
+
+
+Started PATCH "/characters/17" for ::1 at 2020-04-15 22:35:42 -0600
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharactersController#update as JSON
+  Parameters: {"status"=>false, "id"=>"17", "character"=>{"status"=>false}}
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:11:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mHouse Load (0.5ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mCharacter Update (1.6ms)[0m  [1m[33mUPDATE "characters" SET "status" = ?, "updated_at" = ? WHERE "characters"."id" = ?[0m  [["status", 0], ["updated_at", "2020-04-16 04:35:42.436651"], ["id", 17]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+Completed 200 OK in 30ms (Views: 0.5ms | ActiveRecord: 6.2ms | Allocations: 4370)
+
+
+Started PATCH "/characters/17" for ::1 at 2020-04-15 22:35:45 -0600
+Processing by CharactersController#update as JSON
+  Parameters: {"status"=>false, "id"=>"17", "character"=>{"status"=>false}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:11:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mCharacter Update (0.6ms)[0m  [1m[33mUPDATE "characters" SET "status" = ?, "updated_at" = ? WHERE "characters"."id" = ?[0m  [["status", 1], ["updated_at", "2020-04-16 04:35:45.671355"], ["id", 17]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[35m (15.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+Completed 200 OK in 27ms (Views: 0.4ms | ActiveRecord: 16.9ms | Allocations: 3987)
+
+
+Started PATCH "/characters/17" for ::1 at 2020-04-15 22:35:55 -0600
+Processing by CharactersController#update as JSON
+  Parameters: {"status"=>false, "id"=>"17", "character"=>{"status"=>false}}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:11:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mCharacter Update (0.5ms)[0m  [1m[33mUPDATE "characters" SET "status" = ?, "updated_at" = ? WHERE "characters"."id" = ?[0m  [["status", 0], ["updated_at", "2020-04-16 04:35:55.129116"], ["id", 17]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[35m (15.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+Completed 200 OK in 27ms (Views: 0.4ms | ActiveRecord: 16.9ms | Allocations: 3988)
+
+
+Started PATCH "/characters/17" for ::1 at 2020-04-15 22:35:57 -0600
+Processing by CharactersController#update as JSON
+  Parameters: {"status"=>false, "id"=>"17", "character"=>{"status"=>false}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:11:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mCharacter Update (0.6ms)[0m  [1m[33mUPDATE "characters" SET "status" = ?, "updated_at" = ? WHERE "characters"."id" = ?[0m  [["status", 1], ["updated_at", "2020-04-16 04:35:57.081239"], ["id", 17]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[35m (16.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+Completed 200 OK in 27ms (Views: 0.4ms | ActiveRecord: 17.1ms | Allocations: 3987)
+
+
+Started GET "/houses" for ::1 at 2020-04-15 22:36:57 -0600
+Processing by HousesController#index as */*
+  [1m[36mHouse Load (0.4ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+Completed 200 OK in 85ms (Views: 78.3ms | ActiveRecord: 5.9ms | Allocations: 37238)
+
+
+Started GET "/houses" for ::1 at 2020-04-15 22:38:19 -0600
+Processing by HousesController#index as */*
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+Completed 200 OK in 97ms (Views: 91.5ms | ActiveRecord: 5.5ms | Allocations: 37201)
+
+
+Started GET "/houses" for ::1 at 2020-04-15 22:38:31 -0600
+Processing by HousesController#index as */*
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (1.8ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.6ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+Completed 200 OK in 97ms (Views: 89.3ms | ActiveRecord: 7.6ms | Allocations: 37200)
+
+
+Started GET "/houses" for ::1 at 2020-04-15 22:39:40 -0600
+Processing by HousesController#index as */*
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.6ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+Completed 200 OK in 91ms (Views: 84.1ms | ActiveRecord: 6.3ms | Allocations: 37198)
+
+
+Started PATCH "/characters/22" for ::1 at 2020-04-15 22:50:51 -0600
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharactersController#update as JSON
+  Parameters: {"status"=>false, "id"=>"22", "character"=>{"status"=>false}}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:11:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mHouse Load (0.5ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mCharacter Update (0.5ms)[0m  [1m[33mUPDATE "characters" SET "status" = ?, "updated_at" = ? WHERE "characters"."id" = ?[0m  [["status", 0], ["updated_at", "2020-04-16 04:50:51.258094"], ["id", 22]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+Completed 200 OK in 15ms (Views: 0.8ms | ActiveRecord: 5.0ms | Allocations: 4023)
+
+
+Started PATCH "/characters/22" for ::1 at 2020-04-15 22:50:52 -0600
+Processing by CharactersController#update as JSON
+  Parameters: {"status"=>false, "id"=>"22", "character"=>{"status"=>false}}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:11:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mCharacter Update (0.4ms)[0m  [1m[33mUPDATE "characters" SET "status" = ?, "updated_at" = ? WHERE "characters"."id" = ?[0m  [["status", 1], ["updated_at", "2020-04-16 04:50:52.311653"], ["id", 22]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[35m (16.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+Completed 200 OK in 25ms (Views: 0.4ms | ActiveRecord: 17.2ms | Allocations: 3987)
+
+
+Started PATCH "/characters/23" for ::1 at 2020-04-15 22:50:53 -0600
+Processing by CharactersController#update as JSON
+  Parameters: {"status"=>false, "id"=>"23", "character"=>{"status"=>false}}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:11:in `update'
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mCharacter Update (1.0ms)[0m  [1m[33mUPDATE "characters" SET "status" = ?, "updated_at" = ? WHERE "characters"."id" = ?[0m  [["status", 0], ["updated_at", "2020-04-16 04:50:53.522846"], ["id", 23]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[35m (15.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+Completed 200 OK in 29ms (Views: 0.7ms | ActiveRecord: 17.8ms | Allocations: 3987)
+
+
+Started PATCH "/characters/23" for ::1 at 2020-04-15 22:50:54 -0600
+Processing by CharactersController#update as JSON
+  Parameters: {"status"=>false, "id"=>"23", "character"=>{"status"=>false}}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:11:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mCharacter Update (0.6ms)[0m  [1m[33mUPDATE "characters" SET "status" = ?, "updated_at" = ? WHERE "characters"."id" = ?[0m  [["status", 1], ["updated_at", "2020-04-16 04:50:54.323579"], ["id", 23]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[35m (15.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+Completed 200 OK in 26ms (Views: 0.6ms | ActiveRecord: 17.0ms | Allocations: 3988)
+
+
+Started PATCH "/characters/28" for ::1 at 2020-04-15 22:50:55 -0600
+Processing by CharactersController#update as JSON
+  Parameters: {"status"=>false, "id"=>"28", "character"=>{"status"=>false}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:11:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mCharacter Update (0.6ms)[0m  [1m[33mUPDATE "characters" SET "status" = ?, "updated_at" = ? WHERE "characters"."id" = ?[0m  [["status", 0], ["updated_at", "2020-04-16 04:50:55.767453"], ["id", 28]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[35m (16.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+Completed 200 OK in 27ms (Views: 0.4ms | ActiveRecord: 17.2ms | Allocations: 3987)
+
+
+Started PATCH "/characters/28" for ::1 at 2020-04-15 22:50:56 -0600
+Processing by CharactersController#update as JSON
+  Parameters: {"status"=>false, "id"=>"28", "character"=>{"status"=>false}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:11:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mCharacter Update (0.6ms)[0m  [1m[33mUPDATE "characters" SET "status" = ?, "updated_at" = ? WHERE "characters"."id" = ?[0m  [["status", 1], ["updated_at", "2020-04-16 04:50:56.654714"], ["id", 28]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[35m (16.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+Completed 200 OK in 27ms (Views: 0.4ms | ActiveRecord: 17.1ms | Allocations: 3987)
+
+
+Started PATCH "/characters/22" for ::1 at 2020-04-15 22:51:08 -0600
+Processing by CharactersController#update as JSON
+  Parameters: {"status"=>false, "id"=>"22", "character"=>{"status"=>false}}
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:11:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mCharacter Update (0.5ms)[0m  [1m[33mUPDATE "characters" SET "status" = ?, "updated_at" = ? WHERE "characters"."id" = ?[0m  [["status", 0], ["updated_at", "2020-04-16 04:51:08.202229"], ["id", 22]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[35m (15.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+Completed 200 OK in 29ms (Views: 0.4ms | ActiveRecord: 17.1ms | Allocations: 3987)
+
+
+Started PATCH "/characters/22" for ::1 at 2020-04-15 22:51:11 -0600
+Processing by CharactersController#update as JSON
+  Parameters: {"status"=>false, "id"=>"22", "character"=>{"status"=>false}}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:11:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mCharacter Update (0.4ms)[0m  [1m[33mUPDATE "characters" SET "status" = ?, "updated_at" = ? WHERE "characters"."id" = ?[0m  [["status", 1], ["updated_at", "2020-04-16 04:51:11.585089"], ["id", 22]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[35m (16.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+Completed 200 OK in 28ms (Views: 0.7ms | ActiveRecord: 17.1ms | Allocations: 3987)
+
+
+Started PATCH "/characters/25" for ::1 at 2020-04-15 22:52:12 -0600
+Processing by CharactersController#update as JSON
+  Parameters: {"status"=>true, "id"=>"25", "character"=>{"status"=>true}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:11:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mHouse Load (0.4ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mCharacter Update (0.5ms)[0m  [1m[33mUPDATE "characters" SET "status" = ?, "updated_at" = ? WHERE "characters"."id" = ?[0m  [["status", 1], ["updated_at", "2020-04-16 04:52:12.051844"], ["id", 25]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[35m (15.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+Completed 200 OK in 27ms (Views: 0.4ms | ActiveRecord: 17.0ms | Allocations: 3987)
+
+
+Started PATCH "/characters/25" for ::1 at 2020-04-15 22:52:15 -0600
+Processing by CharactersController#update as JSON
+  Parameters: {"status"=>true, "id"=>"25", "character"=>{"status"=>true}}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:11:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mCharacter Update (0.6ms)[0m  [1m[33mUPDATE "characters" SET "status" = ?, "updated_at" = ? WHERE "characters"."id" = ?[0m  [["status", 0], ["updated_at", "2020-04-16 04:52:15.252605"], ["id", 25]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[35m (17.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+Completed 200 OK in 30ms (Views: 0.9ms | ActiveRecord: 18.1ms | Allocations: 3987)
+
+
+Started GET "/houses" for ::1 at 2020-04-15 22:53:11 -0600
+Processing by HousesController#index as */*
+  [1m[36mHouse Load (0.5ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+Completed 200 OK in 76ms (Views: 70.6ms | ActiveRecord: 4.6ms | Allocations: 37241)
+
+
+Started PATCH "/characters/17" for ::1 at 2020-04-15 22:53:14 -0600
+Processing by CharactersController#update as JSON
+  Parameters: {"status"=>false, "id"=>"17", "character"=>{"status"=>false}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:11:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mCharacter Update (0.9ms)[0m  [1m[33mUPDATE "characters" SET "status" = ?, "updated_at" = ? WHERE "characters"."id" = ?[0m  [["status", 0], ["updated_at", "2020-04-16 04:53:14.171849"], ["id", 17]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[35m (15.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+Completed 200 OK in 29ms (Views: 0.5ms | ActiveRecord: 17.3ms | Allocations: 3987)
+
+
+Started PATCH "/characters/17" for ::1 at 2020-04-15 22:53:16 -0600
+Processing by CharactersController#update as JSON
+  Parameters: {"status"=>false, "id"=>"17", "character"=>{"status"=>false}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:11:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mCharacter Update (0.5ms)[0m  [1m[33mUPDATE "characters" SET "status" = ?, "updated_at" = ? WHERE "characters"."id" = ?[0m  [["status", 1], ["updated_at", "2020-04-16 04:53:16.481053"], ["id", 17]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[35m (16.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+Completed 200 OK in 29ms (Views: 0.4ms | ActiveRecord: 17.3ms | Allocations: 3987)
+
+
+Started PATCH "/characters/18" for ::1 at 2020-04-15 22:53:18 -0600
+Processing by CharactersController#update as JSON
+  Parameters: {"status"=>false, "id"=>"18", "character"=>{"status"=>false}}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:11:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mCharacter Update (0.5ms)[0m  [1m[33mUPDATE "characters" SET "status" = ?, "updated_at" = ? WHERE "characters"."id" = ?[0m  [["status", 0], ["updated_at", "2020-04-16 04:53:18.833440"], ["id", 18]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[35m (16.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+Completed 200 OK in 27ms (Views: 0.7ms | ActiveRecord: 17.1ms | Allocations: 3987)
+
+
+Started PATCH "/characters/18" for ::1 at 2020-04-15 22:53:20 -0600
+Processing by CharactersController#update as JSON
+  Parameters: {"status"=>false, "id"=>"18", "character"=>{"status"=>false}}
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:11:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mCharacter Update (0.9ms)[0m  [1m[33mUPDATE "characters" SET "status" = ?, "updated_at" = ? WHERE "characters"."id" = ?[0m  [["status", 1], ["updated_at", "2020-04-16 04:53:20.102352"], ["id", 18]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[35m (15.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+Completed 200 OK in 30ms (Views: 0.7ms | ActiveRecord: 17.5ms | Allocations: 3987)
+
+
+Started PATCH "/characters/26" for ::1 at 2020-04-15 22:53:26 -0600
+Processing by CharactersController#update as JSON
+  Parameters: {"status"=>false, "id"=>"26", "character"=>{"status"=>false}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:11:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mCharacter Update (0.6ms)[0m  [1m[33mUPDATE "characters" SET "status" = ?, "updated_at" = ? WHERE "characters"."id" = ?[0m  [["status", 0], ["updated_at", "2020-04-16 04:53:26.299168"], ["id", 26]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[35m (15.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+Completed 200 OK in 27ms (Views: 0.6ms | ActiveRecord: 17.0ms | Allocations: 3987)
+
+
+Started PATCH "/characters/26" for ::1 at 2020-04-15 22:53:30 -0600
+Processing by CharactersController#update as JSON
+  Parameters: {"status"=>false, "id"=>"26", "character"=>{"status"=>false}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:11:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mCharacter Update (0.6ms)[0m  [1m[33mUPDATE "characters" SET "status" = ?, "updated_at" = ? WHERE "characters"."id" = ?[0m  [["status", 1], ["updated_at", "2020-04-16 04:53:30.612548"], ["id", 26]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[35m (16.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+Completed 200 OK in 29ms (Views: 0.8ms | ActiveRecord: 17.9ms | Allocations: 3987)
+
+
+Started PATCH "/characters/41" for ::1 at 2020-04-15 22:54:05 -0600
+Processing by CharactersController#update as JSON
+  Parameters: {"status"=>false, "id"=>"41", "character"=>{"status"=>false}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:11:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mCharacter Update (0.4ms)[0m  [1m[33mUPDATE "characters" SET "status" = ?, "updated_at" = ? WHERE "characters"."id" = ?[0m  [["status", 0], ["updated_at", "2020-04-16 04:54:05.053383"], ["id", 41]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[35m (17.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+Completed 200 OK in 41ms (Views: 1.0ms | ActiveRecord: 18.5ms | Allocations: 3990)
+
+
+Started PATCH "/characters/41" for ::1 at 2020-04-15 22:54:06 -0600
+Processing by CharactersController#update as JSON
+  Parameters: {"status"=>false, "id"=>"41", "character"=>{"status"=>false}}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:11:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mCharacter Update (0.5ms)[0m  [1m[33mUPDATE "characters" SET "status" = ?, "updated_at" = ? WHERE "characters"."id" = ?[0m  [["status", 1], ["updated_at", "2020-04-16 04:54:06.874643"], ["id", 41]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[35m (15.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+Completed 200 OK in 27ms (Views: 0.7ms | ActiveRecord: 16.9ms | Allocations: 3987)
+
+
+Started PATCH "/characters/40" for ::1 at 2020-04-15 22:54:08 -0600
+Processing by CharactersController#update as JSON
+  Parameters: {"status"=>false, "id"=>"40", "character"=>{"status"=>false}}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:11:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mCharacter Update (0.4ms)[0m  [1m[33mUPDATE "characters" SET "status" = ?, "updated_at" = ? WHERE "characters"."id" = ?[0m  [["status", 0], ["updated_at", "2020-04-16 04:54:08.880750"], ["id", 40]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[35m (15.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+Completed 200 OK in 26ms (Views: 0.4ms | ActiveRecord: 16.7ms | Allocations: 3987)
+
+
+Started PATCH "/characters/40" for ::1 at 2020-04-15 22:54:12 -0600
+Processing by CharactersController#update as JSON
+  Parameters: {"status"=>false, "id"=>"40", "character"=>{"status"=>false}}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:11:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mCharacter Update (0.6ms)[0m  [1m[33mUPDATE "characters" SET "status" = ?, "updated_at" = ? WHERE "characters"."id" = ?[0m  [["status", 1], ["updated_at", "2020-04-16 04:54:12.889792"], ["id", 40]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[35m (15.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+Completed 200 OK in 28ms (Views: 0.4ms | ActiveRecord: 17.1ms | Allocations: 3987)
+
+
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCharacters (20200408182012)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE "characters"[0m
+  [1m[36mprimary::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20200408182012"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateHouses (20200408181847)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[35mDROP TABLE "houses"[0m
+  [1m[36mprimary::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20200408181847"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateHouses (20200408181847)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "houses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "motto" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200408181847"]]
+  [1m[35m (10.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateCharacters (20200408182012)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "characters" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "status" boolean, "location" varchar, "house_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200408182012"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Create (1.0ms)[0m  [1m[32mINSERT INTO "houses" ("name", "motto", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "House Baratheon"], ["motto", "Ours is the Fury"], ["created_at", "2020-04-16 04:55:54.570727"], ["updated_at", "2020-04-16 04:55:54.570727"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Create (0.6ms)[0m  [1m[32mINSERT INTO "houses" ("name", "motto", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "House Greyjoy"], ["motto", "We Do Not Sow"], ["created_at", "2020-04-16 04:55:54.581519"], ["updated_at", "2020-04-16 04:55:54.581519"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Create (0.4ms)[0m  [1m[32mINSERT INTO "houses" ("name", "motto", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "House Martell"], ["motto", "Unbowed, Unbent, Unbroken"], ["created_at", "2020-04-16 04:55:54.589511"], ["updated_at", "2020-04-16 04:55:54.589511"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Create (0.4ms)[0m  [1m[32mINSERT INTO "houses" ("name", "motto", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "House Stark"], ["motto", "Winter is Coming"], ["created_at", "2020-04-16 04:55:54.595117"], ["updated_at", "2020-04-16 04:55:54.595117"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Create (0.4ms)[0m  [1m[32mINSERT INTO "houses" ("name", "motto", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "House Tully"], ["motto", "Family, Duty, Honor"], ["created_at", "2020-04-16 04:55:54.600736"], ["updated_at", "2020-04-16 04:55:54.600736"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Create (0.4ms)[0m  [1m[32mINSERT INTO "houses" ("name", "motto", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "House Tyrell"], ["motto", "Growing Strong"], ["created_at", "2020-04-16 04:55:54.606151"], ["updated_at", "2020-04-16 04:55:54.606151"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Create (0.4ms)[0m  [1m[32mINSERT INTO "houses" ("name", "motto", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "House Lannister"], ["motto", "Hear Me Roar!"], ["created_at", "2020-04-16 04:55:54.614352"], ["updated_at", "2020-04-16 04:55:54.614352"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Create (0.4ms)[0m  [1m[32mINSERT INTO "houses" ("name", "motto", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "House Frey"], ["motto", "We Stand Together"], ["created_at", "2020-04-16 04:55:54.619783"], ["updated_at", "2020-04-16 04:55:54.619783"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Create (0.4ms)[0m  [1m[32mINSERT INTO "houses" ("name", "motto", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "House Targaryen"], ["motto", "Fire and Blood"], ["created_at", "2020-04-16 04:55:54.625492"], ["updated_at", "2020-04-16 04:55:54.625492"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Create (0.4ms)[0m  [1m[32mINSERT INTO "houses" ("name", "motto", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "House Bolton"], ["motto", "Our Blades are Sharp"], ["created_at", "2020-04-16 04:55:54.631182"], ["updated_at", "2020-04-16 04:55:54.631182"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Create (0.4ms)[0m  [1m[32mINSERT INTO "houses" ("name", "motto", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "House Arryn"], ["motto", "As High as Honor"], ["created_at", "2020-04-16 04:55:54.636979"], ["updated_at", "2020-04-16 04:55:54.636979"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Eddard Stark"], ["status", 1], ["location", "Westeros"], ["house_id", 4], ["created_at", "2020-04-16 04:55:54.666823"], ["updated_at", "2020-04-16 04:55:54.666823"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Catelyn Stark"], ["status", 1], ["location", "Westeros"], ["house_id", 4], ["created_at", "2020-04-16 04:55:54.674798"], ["updated_at", "2020-04-16 04:55:54.674798"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Robb Stark"], ["status", 1], ["location", "Westeros"], ["house_id", 4], ["created_at", "2020-04-16 04:55:54.682541"], ["updated_at", "2020-04-16 04:55:54.682541"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Sansa Stark"], ["status", 1], ["location", "Westeros"], ["house_id", 4], ["created_at", "2020-04-16 04:55:54.690445"], ["updated_at", "2020-04-16 04:55:54.690445"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Arya Stark"], ["status", 1], ["location", "Westeros"], ["house_id", 4], ["created_at", "2020-04-16 04:55:54.698076"], ["updated_at", "2020-04-16 04:55:54.698076"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Bran Stark"], ["status", 1], ["location", "Westeros"], ["house_id", 4], ["created_at", "2020-04-16 04:55:54.705949"], ["updated_at", "2020-04-16 04:55:54.705949"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.5ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Rickon Stark"], ["status", 1], ["location", "Westeros"], ["house_id", 4], ["created_at", "2020-04-16 04:55:54.713424"], ["updated_at", "2020-04-16 04:55:54.713424"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Benjen Stark"], ["status", 1], ["location", "Westeros"], ["house_id", 4], ["created_at", "2020-04-16 04:55:54.721618"], ["updated_at", "2020-04-16 04:55:54.721618"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Jon Snow"], ["status", 1], ["location", "Westeros"], ["house_id", 4], ["created_at", "2020-04-16 04:55:54.729219"], ["updated_at", "2020-04-16 04:55:54.729219"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Tywin Lannister"], ["status", 1], ["location", "Westeros"], ["house_id", 7], ["created_at", "2020-04-16 04:55:54.736916"], ["updated_at", "2020-04-16 04:55:54.736916"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.7ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Cersei Lannister"], ["status", 1], ["location", "Westeros"], ["house_id", 7], ["created_at", "2020-04-16 04:55:54.787210"], ["updated_at", "2020-04-16 04:55:54.787210"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.5ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Jaime Lannister"], ["status", 1], ["location", "Westeros"], ["house_id", 7], ["created_at", "2020-04-16 04:55:54.799307"], ["updated_at", "2020-04-16 04:55:54.799307"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Tyrion Lannister"], ["status", 1], ["location", "Westeros"], ["house_id", 7], ["created_at", "2020-04-16 04:55:54.806936"], ["updated_at", "2020-04-16 04:55:54.806936"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Joffrey Baratheon"], ["status", 1], ["location", "Westeros"], ["house_id", 7], ["created_at", "2020-04-16 04:55:54.840983"], ["updated_at", "2020-04-16 04:55:54.840983"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.6ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Myrcella Baratheon"], ["status", 1], ["location", "Westeros"], ["house_id", 7], ["created_at", "2020-04-16 04:55:54.851445"], ["updated_at", "2020-04-16 04:55:54.851445"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Tommen Baratheon"], ["status", 1], ["location", "Westeros"], ["house_id", 7], ["created_at", "2020-04-16 04:55:54.859789"], ["updated_at", "2020-04-16 04:55:54.859789"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Robert Baratheon"], ["status", 1], ["location", "Westeros"], ["house_id", 1], ["created_at", "2020-04-16 04:55:54.868375"], ["updated_at", "2020-04-16 04:55:54.868375"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Stannis Baratheon"], ["status", 1], ["location", "Westeros"], ["house_id", 1], ["created_at", "2020-04-16 04:55:54.875495"], ["updated_at", "2020-04-16 04:55:54.875495"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Renly Baratheon"], ["status", 1], ["location", "Westeros"], ["house_id", 1], ["created_at", "2020-04-16 04:55:54.882632"], ["updated_at", "2020-04-16 04:55:54.882632"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.5ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Daenerys Targaryen"], ["status", 1], ["location", "Essos"], ["house_id", 9], ["created_at", "2020-04-16 04:55:54.889359"], ["updated_at", "2020-04-16 04:55:54.889359"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Viserys Targaryen"], ["status", 1], ["location", "Essos"], ["house_id", 9], ["created_at", "2020-04-16 04:55:54.896289"], ["updated_at", "2020-04-16 04:55:54.896289"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Balon Greyjoy"], ["status", 1], ["location", "Westeros"], ["house_id", 2], ["created_at", "2020-04-16 04:55:54.903124"], ["updated_at", "2020-04-16 04:55:54.903124"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Theon Greyjoy"], ["status", 1], ["location", "Westeros"], ["house_id", 2], ["created_at", "2020-04-16 04:55:54.911107"], ["updated_at", "2020-04-16 04:55:54.911107"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Asha Greyjoy"], ["status", 1], ["location", "Westeros"], ["house_id", 2], ["created_at", "2020-04-16 04:55:54.918819"], ["updated_at", "2020-04-16 04:55:54.918819"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Jon Arryn"], ["status", 1], ["location", "Westeros"], ["house_id", 11], ["created_at", "2020-04-16 04:55:54.926535"], ["updated_at", "2020-04-16 04:55:54.926535"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Lysa Arryn"], ["status", 1], ["location", "Westeros"], ["house_id", 11], ["created_at", "2020-04-16 04:55:54.933901"], ["updated_at", "2020-04-16 04:55:54.933901"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Robert Arryn"], ["status", 1], ["location", "Westeros"], ["house_id", 11], ["created_at", "2020-04-16 04:55:54.940722"], ["updated_at", "2020-04-16 04:55:54.940722"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Doran Martell"], ["status", 1], ["location", "Westeros"], ["house_id", 3], ["created_at", "2020-04-16 04:55:54.947121"], ["updated_at", "2020-04-16 04:55:54.947121"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Oberyn Martell"], ["status", 1], ["location", "Westeros"], ["house_id", 3], ["created_at", "2020-04-16 04:55:54.954700"], ["updated_at", "2020-04-16 04:55:54.954700"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.6ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Hoster Tully"], ["status", 1], ["location", "Westeros"], ["house_id", 5], ["created_at", "2020-04-16 04:55:54.961673"], ["updated_at", "2020-04-16 04:55:54.961673"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Edmure Tully"], ["status", 1], ["location", "Westeros"], ["house_id", 5], ["created_at", "2020-04-16 04:55:54.970587"], ["updated_at", "2020-04-16 04:55:54.970587"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Mace Tyrell"], ["status", 1], ["location", "Westeros"], ["house_id", 6], ["created_at", "2020-04-16 04:55:54.976973"], ["updated_at", "2020-04-16 04:55:54.976973"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.5ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Olenna Tyrell"], ["status", 1], ["location", "Westeros"], ["house_id", 6], ["created_at", "2020-04-16 04:55:54.987065"], ["updated_at", "2020-04-16 04:55:54.987065"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Margaery Tyrell"], ["status", 1], ["location", "Westeros"], ["house_id", 6], ["created_at", "2020-04-16 04:55:54.995121"], ["updated_at", "2020-04-16 04:55:54.995121"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Loras Tyrell"], ["status", 1], ["location", "Westeros"], ["house_id", 6], ["created_at", "2020-04-16 04:55:55.002048"], ["updated_at", "2020-04-16 04:55:55.002048"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Roose Bolton"], ["status", 1], ["location", "Westeros"], ["house_id", 10], ["created_at", "2020-04-16 04:55:55.009388"], ["updated_at", "2020-04-16 04:55:55.009388"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Ramsay Snow"], ["status", 1], ["location", "Westeros"], ["house_id", 10], ["created_at", "2020-04-16 04:55:55.017797"], ["updated_at", "2020-04-16 04:55:55.017797"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Walda Bolton"], ["status", 1], ["location", "Westeros"], ["house_id", 10], ["created_at", "2020-04-16 04:55:55.025407"], ["updated_at", "2020-04-16 04:55:55.025407"]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.6ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Walder Frey"], ["status", 1], ["location", "Westeros"], ["house_id", 8], ["created_at", "2020-04-16 04:55:55.051138"], ["updated_at", "2020-04-16 04:55:55.051138"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Stevron Frey"], ["status", 1], ["location", "Westeros"], ["house_id", 8], ["created_at", "2020-04-16 04:55:55.059073"], ["updated_at", "2020-04-16 04:55:55.059073"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "status", "location", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Lame Lothar Frey"], ["status", 1], ["location", "Westeros"], ["house_id", 8], ["created_at", "2020-04-16 04:55:55.067213"], ["updated_at", "2020-04-16 04:55:55.067213"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/houses" for ::1 at 2020-04-15 22:56:01 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HousesController#index as */*
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 1]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 2]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 3]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 4]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 5]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 6]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 7]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 8]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 9]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 10]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "characters"."id" FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = ?[0m  [["house_id", 11]]
+  ↳ app/controllers/houses_controller.rb:7:in `index'
+Completed 200 OK in 87ms (Views: 76.1ms | ActiveRecord: 6.0ms | Allocations: 48605)
+
+
+Started PATCH "/characters/17" for ::1 at 2020-04-15 22:56:03 -0600
+Processing by CharactersController#update as JSON
+  Parameters: {"status"=>false, "id"=>"17", "character"=>{"status"=>false}}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:11:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mCharacter Update (0.6ms)[0m  [1m[33mUPDATE "characters" SET "status" = ?, "updated_at" = ? WHERE "characters"."id" = ?[0m  [["status", 0], ["updated_at", "2020-04-16 04:56:03.250140"], ["id", 17]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+Completed 200 OK in 15ms (Views: 1.1ms | ActiveRecord: 4.6ms | Allocations: 4365)
+
+
+Started PATCH "/characters/17" for ::1 at 2020-04-15 22:56:04 -0600
+Processing by CharactersController#update as JSON
+  Parameters: {"status"=>false, "id"=>"17", "character"=>{"status"=>false}}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:11:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mCharacter Update (0.5ms)[0m  [1m[33mUPDATE "characters" SET "status" = ?, "updated_at" = ? WHERE "characters"."id" = ?[0m  [["status", 1], ["updated_at", "2020-04-16 04:56:04.606292"], ["id", 17]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[35m (15.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+Completed 200 OK in 28ms (Views: 0.7ms | ActiveRecord: 17.1ms | Allocations: 3987)
+
+
+Started PATCH "/characters/23" for ::1 at 2020-04-15 22:56:05 -0600
+Processing by CharactersController#update as JSON
+  Parameters: {"status"=>false, "id"=>"23", "character"=>{"status"=>false}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:11:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mCharacter Update (0.4ms)[0m  [1m[33mUPDATE "characters" SET "status" = ?, "updated_at" = ? WHERE "characters"."id" = ?[0m  [["status", 0], ["updated_at", "2020-04-16 04:56:06.008895"], ["id", 23]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[35m (15.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+Completed 200 OK in 26ms (Views: 0.5ms | ActiveRecord: 16.9ms | Allocations: 3990)
+
+
+Started PATCH "/characters/23" for ::1 at 2020-04-15 22:56:07 -0600
+Processing by CharactersController#update as JSON
+  Parameters: {"status"=>false, "id"=>"23", "character"=>{"status"=>false}}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:11:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mCharacter Update (0.4ms)[0m  [1m[33mUPDATE "characters" SET "status" = ?, "updated_at" = ? WHERE "characters"."id" = ?[0m  [["status", 1], ["updated_at", "2020-04-16 04:56:07.280020"], ["id", 23]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[35m (16.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+Completed 200 OK in 29ms (Views: 1.0ms | ActiveRecord: 17.7ms | Allocations: 3987)
+
+
+Started PATCH "/characters/29" for ::1 at 2020-04-15 22:56:08 -0600
+Processing by CharactersController#update as JSON
+  Parameters: {"status"=>false, "id"=>"29", "character"=>{"status"=>false}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:11:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mCharacter Update (0.7ms)[0m  [1m[33mUPDATE "characters" SET "status" = ?, "updated_at" = ? WHERE "characters"."id" = ?[0m  [["status", 0], ["updated_at", "2020-04-16 04:56:08.690993"], ["id", 29]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[35m (16.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+Completed 200 OK in 27ms (Views: 0.6ms | ActiveRecord: 17.5ms | Allocations: 3987)
+
+
+Started PATCH "/characters/29" for ::1 at 2020-04-15 22:56:09 -0600
+Processing by CharactersController#update as JSON
+  Parameters: {"status"=>false, "id"=>"29", "character"=>{"status"=>false}}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:11:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mCharacter Update (0.6ms)[0m  [1m[33mUPDATE "characters" SET "status" = ?, "updated_at" = ? WHERE "characters"."id" = ?[0m  [["status", 1], ["updated_at", "2020-04-16 04:56:09.649234"], ["id", 29]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[35m (15.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+Completed 200 OK in 27ms (Views: 0.4ms | ActiveRecord: 17.0ms | Allocations: 3987)
+
+
+Started PATCH "/characters/20" for ::1 at 2020-04-15 22:56:13 -0600
+Processing by CharactersController#update as JSON
+  Parameters: {"status"=>false, "id"=>"20", "character"=>{"status"=>false}}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:11:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mCharacter Update (0.6ms)[0m  [1m[33mUPDATE "characters" SET "status" = ?, "updated_at" = ? WHERE "characters"."id" = ?[0m  [["status", 0], ["updated_at", "2020-04-16 04:56:13.484923"], ["id", 20]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+Completed 200 OK in 20ms (Views: 1.0ms | ActiveRecord: 9.1ms | Allocations: 3987)
+
+
+Started PATCH "/characters/20" for ::1 at 2020-04-15 22:56:14 -0600
+Processing by CharactersController#update as JSON
+  Parameters: {"status"=>false, "id"=>"20", "character"=>{"status"=>false}}
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:11:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mCharacter Update (0.7ms)[0m  [1m[33mUPDATE "characters" SET "status" = ?, "updated_at" = ? WHERE "characters"."id" = ?[0m  [["status", 1], ["updated_at", "2020-04-16 04:56:14.468359"], ["id", 20]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[35m (16.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+Completed 200 OK in 28ms (Views: 0.4ms | ActiveRecord: 17.4ms | Allocations: 3987)
+
+
+Started PATCH "/characters/25" for ::1 at 2020-04-15 22:56:16 -0600
+Processing by CharactersController#update as JSON
+  Parameters: {"status"=>false, "id"=>"25", "character"=>{"status"=>false}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:11:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mCharacter Update (0.6ms)[0m  [1m[33mUPDATE "characters" SET "status" = ?, "updated_at" = ? WHERE "characters"."id" = ?[0m  [["status", 0], ["updated_at", "2020-04-16 04:56:16.976745"], ["id", 25]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[35m (16.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+Completed 200 OK in 28ms (Views: 0.5ms | ActiveRecord: 17.3ms | Allocations: 3987)
+
+
+Started PATCH "/characters/25" for ::1 at 2020-04-15 22:56:17 -0600
+Processing by CharactersController#update as JSON
+  Parameters: {"status"=>false, "id"=>"25", "character"=>{"status"=>false}}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:11:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[36mCharacter Update (0.4ms)[0m  [1m[33mUPDATE "characters" SET "status" = ?, "updated_at" = ? WHERE "characters"."id" = ?[0m  [["status", 1], ["updated_at", "2020-04-16 04:56:17.820766"], ["id", 25]]
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+  [1m[35m (15.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:12:in `update'
+Completed 200 OK in 25ms (Views: 0.4ms | ActiveRecord: 16.7ms | Allocations: 3987)
+
+

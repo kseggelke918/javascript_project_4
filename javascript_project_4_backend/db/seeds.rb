@@ -37,7 +37,7 @@ Character.create(name: 'Balon Greyjoy', house_id: 2, status: true, location: 'We
 Character.create(name: 'Theon Greyjoy', house_id: 2, status: true, location: 'Westeros')
 Character.create(name: 'Asha Greyjoy', house_id: 2, status: true, location: 'Westeros')
 
-Character.create(name: 'Jon Arryn', house_id: 11, status: false, location: 'Westeros')
+Character.create(name: 'Jon Arryn', house_id: 11, status: true, location: 'Westeros')
 Character.create(name: 'Lysa Arryn', house_id: 11, status: true, location: 'Westeros')
 Character.create(name: 'Robert Arryn', house_id: 11, status: true, location: 'Westeros')
 
