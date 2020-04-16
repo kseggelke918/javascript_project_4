@@ -6,32 +6,6 @@ class Character {
         this.id = character.id
     }
 
-    updateStatusWord(){
-        console.log(this)
-        let statusSpan = document.getElementById(`${this.data.id}`)
-        if (this.data.attributes.status === true ){
-            statusSpan.innerText = "alive"
-        } else {
-            statusSpan.innerText = "deceased"
-        }
-    }
-
-    updateStatus(){  
-        if (this.status === "deceased"){
-            return true 
-        } else {
-            return false
-        } 
-    }
-
-    listenForToggle(){
-        let span = document.getElementById(`toggle-${this.id}`)
-        let newStatus = this.updateStatus
-        span.addEventListener('click', (event) => {
-            this.fetchPatchStatus(newStatus)
-        })
-    }
-
     deleteEventListener(){
         let deleteCharacter = document.getElementById(`delete-${this.id}`)
         deleteCharacter.addEventListener('click', (event) => {
@@ -52,21 +26,47 @@ class Character {
     }
 
     fetchPatchStatus(newStatus){
-        console.log(this)
         fetch(`http://localhost:3000/characters/${this.id}`, {
             method: "PATCH", 
             mode: "cors",
             headers: {
                 "Content-Type": "application/json",
-                "Accept": "application/json", 
+                "Accept": "application/json" 
             },
             body: JSON.stringify({
-                status: newStatus
+                status: newStatus 
             })
         })
         .then(response => response.json())
         .then((characterResponse) => {
-            this.updateStatusWord()
+            let updatedCharacter = new Character(characterResponse.data.attributes)
+            updatedCharacter.id = characterResponse.data.id
+            updatedCharacter.updateStatusWord();
+        })
+    }
+
+    updateStatusWord(){
+        let statusSpan = document.getElementById(`${this.id}`)
+        if (this.status === true ){
+            statusSpan.innerText = "alive"
+        } else {
+            statusSpan.innerText = "deceased"
+        }
+    }
+
+    updateStatus(){  
+        if (this.status === "deceased"){
+            return true 
+        } else {
+            return false
+        } 
+    }
+
+    listenForToggle(){
+        let span = document.getElementById(`toggle-${this.id}`)
+        let newStatus = this.updateStatus();
+        span.addEventListener('click', (event) => {
+            this.fetchPatchStatus(newStatus)
         })
     }
 
