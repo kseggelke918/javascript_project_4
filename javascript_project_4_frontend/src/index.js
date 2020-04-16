@@ -9,23 +9,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
             })
         })
 
-
-// function fetchPatchStatus(newStatus, character){
-//     fetch(`http://localhost:3000/characters/${character.id}`, {
-//         method: "PATCH", 
-//         mode: "cors",
-//         headers: {
-//             "Content-Type": "application/json",
-//             "Accept": "application/json", 
-//         },
-//         body: JSON.stringify({
-//             status: newStatus
-//         })
-//     })
-//     .then(response => response.json())
-//     .then((characterResponse) => {
-//         updateStatusWord(characterResponse)
-//     })
-// }
-
 })
