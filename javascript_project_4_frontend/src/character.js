@@ -4,6 +4,7 @@ class Character {
         this.location = character.location
         this.status = character.status
         this.id = character.id
+        this.house_id = character.house_id
     }
 
     deleteEventListener(){
@@ -46,6 +47,13 @@ class Character {
 
     updateStatusWord(){
         let statusSpan = document.getElementById(`${this.id}`)
+        let aliveCount = document.getElementById(`${this.house_id}`)
+        if (this.status === true) {
+            aliveCount.innerText = parseInt(aliveCount.innerText) + 1 
+            
+        } else {
+            aliveCount.innerText -= 1
+        }
         this.status === true ? statusSpan.innerText = "alive" : statusSpan.innerText = "deceased"
     }
 
@@ -60,5 +68,6 @@ class Character {
             this.fetchPatchStatus(newStatus)
         })
     }
+
 
 }

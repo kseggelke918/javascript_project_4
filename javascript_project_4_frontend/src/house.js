@@ -12,15 +12,20 @@ class House {
         const h4 = document.createElement('h4')
         const deleteButton = document.createElement('button')
         let characters = houses.attributes.characters
+        let numberAlive = document.createElement('h4')
     
         newDiv.setAttribute("class", "house-card")
+        numberAlive.setAttribute("class", "number-alive")
 
         div.appendChild(newDiv)
         newDiv.appendChild(h3)
         newDiv.appendChild(h4)
+        newDiv.appendChild(numberAlive)
     
         h3.innerHTML = `<h3>${houses.attributes.name}</h3>`
         h4.innerHTML = `<h4>${houses.attributes.motto}</h4>`
+        // numberAlive.innerHTML = <h4>`Total alive: <span id=${houses.id}>${houses.attributes.alive_count}</span>`</h4>
+        numberAlive.innerHTML = `Total Alive: <span id=${houses.id}>${houses.attributes.alive_count}</span>`
 
         characters.forEach(character => {
             const characterDiv = document.createElement('div')
@@ -59,5 +64,16 @@ class House {
             characterObject.listenForToggle()
             characterObject.deleteEventListener()
         })
+    }
+
+    static sortHouses(houses){
+        const sortButton = document.getElementById('sort-houses')
+        sortButton.addEventListener('click', (event) => {
+            console.log("sortHouses function")
+        })
+    }
+
+    sortedHouses(){
+        console.log("sorted houses function")
     }
 }

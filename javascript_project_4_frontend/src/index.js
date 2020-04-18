@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         .then (function(json){
             json.data.forEach(function(houses){
                 House.createHouse(houses)
+                // House.sortHouses(houses)
             })
         })
-
 })
+
